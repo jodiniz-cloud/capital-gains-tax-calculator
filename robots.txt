@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://capital-gains-tax-calculator.pages.dev/sitemap.xml

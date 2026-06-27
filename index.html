@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Capital Gains Tax Calculator 2025 — Short-Term & Long-Term Federal Tax</title>
+<meta name="description" content="Calculate your 2025 capital gains tax on stocks, real estate, crypto or any asset. See short-term vs long-term rates, NIIT, net profit after tax. Free, instant.">
+<link rel="canonical" href="https://capital-gains-tax-calculator.pages.dev/">
+<meta property="og:title" content="Capital Gains Tax Calculator 2025 — Federal & State Estimator">
+<meta property="og:description" content="Estimate your 2025 capital gains tax on investments, real estate or crypto. Compare short-term vs long-term rates and see your net profit after tax.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://capital-gains-tax-calculator.pages.dev/">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6626869606288906" crossorigin="anonymous"></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Capital Gains Tax Calculator 2025","description":"Calculate federal capital gains tax for 2025 including short-term, long-term rates and NIIT","url":"https://capital-gains-tax-calculator.pages.dev/","applicationCategory":"FinanceApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the capital gains tax rate for 2025?","acceptedAnswer":{"@type":"Answer","text":"For 2025, long-term capital gains rates (assets held over 1 year) are 0%, 15%, or 20% depending on your taxable income. Single filers pay 0% up to $47,025, 15% up to $518,900, and 20% above that. Married filing jointly: 0% up to $94,050, 15% up to $583,750, 20% above. Short-term gains (held 1 year or less) are taxed as ordinary income at your regular bracket (10%–37%)."}},{"@type":"Question","name":"What is the Net Investment Income Tax (NIIT)?","acceptedAnswer":{"@type":"Answer","text":"The NIIT is an additional 3.8% tax on investment income (including capital gains) for high earners. It applies to the lesser of your net investment income or the amount your MAGI exceeds $200,000 (single) or $250,000 (married filing jointly). This can push your effective long-term rate from 20% to 23.8% if you're a high-income investor."}},{"@type":"Question","name":"Does the IRS primary residence exclusion apply to me?","acceptedAnswer":{"@type":"Answer","text":"If you sell your primary home, you may exclude up to $250,000 of capital gains ($500,000 if married filing jointly) from federal tax, provided you owned and lived in the home for at least 2 of the last 5 years. This exclusion does not apply to investment properties or vacation homes."}},{"@type":"Question","name":"How do capital losses reduce my tax?","acceptedAnswer":{"@type":"Answer","text":"Capital losses offset capital gains dollar-for-dollar. If your losses exceed gains, you can deduct up to $3,000 per year against ordinary income, and carry forward the remaining loss to future years indefinitely. This strategy — called tax-loss harvesting — is commonly used in taxable investment accounts to minimize annual tax bills."}},{"@type":"Question","name":"Are cryptocurrency gains taxed as capital gains?","acceptedAnswer":{"@type":"Answer","text":"Yes. The IRS treats cryptocurrency as property. Selling, exchanging, or spending crypto triggers a capital gains event. If you held the crypto over 1 year, you pay long-term rates (0%/15%/20%). Under 1 year = short-term ordinary income rates. Mining and staking rewards are taxed as ordinary income at the time received, then again as capital gains when sold."}}]}</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f8fafc;color:#0f172a;line-height:1.6}
+header{background:linear-gradient(135deg,#1e1b4b,#4338ca);color:#fff;padding:28px 20px 24px;text-align:center}
+header h1{font-size:clamp(20px,4vw,30px);font-weight:700}
+header p{margin-top:6px;opacity:.85;font-size:15px}
+.container{max-width:860px;margin:0 auto;padding:0 16px 60px}
+.ad-slot{background:#f1f5f9;border:1px dashed #cbd5e1;border-radius:8px;min-height:90px;display:flex;align-items:center;justify-content:center;color:#94a3b8;font-size:12px;margin:20px 0}
+.card{background:#fff;border-radius:12px;box-shadow:0 1px 4px rgba(0,0,0,.08);padding:28px;margin-top:24px}
+.card h2{font-size:18px;font-weight:700;color:#1e293b;margin-bottom:20px}
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:560px){.grid-2{grid-template-columns:1fr}}
+label{display:block;font-size:13px;font-weight:600;color:#475569;margin-bottom:5px}
+.hint{font-size:11px;color:#94a3b8;margin-top:3px}
+.input-wrap{position:relative}
+.prefix,.suffix{position:absolute;top:50%;transform:translateY(-50%);font-size:15px;color:#64748b;font-weight:600;pointer-events:none}
+.prefix{left:12px}.suffix{right:12px}
+input[type=number],select{width:100%;border:1.5px solid #e2e8f0;border-radius:8px;background:#f8fafc;color:#0f172a;font-size:16px;padding:10px 12px;outline:none;transition:border-color .2s}
+input[type=number]:focus,select:focus{border-color:#4338ca;background:#fff}
+input.has-prefix{padding-left:28px}
+input.has-suffix{padding-right:40px}
+.sec-label{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;color:#64748b;margin:22px 0 14px;padding-bottom:6px;border-bottom:1px solid #f1f5f9}
+.radio-row{display:flex;gap:8px;flex-wrap:wrap}
+.radio-btn{padding:8px 16px;border:1.5px solid #e2e8f0;border-radius:8px;font-size:14px;font-weight:600;color:#64748b;background:#f8fafc;cursor:pointer;transition:all .2s}
+.radio-btn.active{border-color:#4338ca;background:#eef2ff;color:#4338ca}
+.calc-btn{width:100%;margin-top:22px;padding:14px;background:linear-gradient(135deg,#1e1b4b,#4338ca);color:#fff;border:none;border-radius:10px;font-size:17px;font-weight:700;cursor:pointer;transition:opacity .2s}
+.calc-btn:hover{opacity:.9}
+#results{display:none}
+.result-hero{background:#1e1b4b;color:#fff;border-radius:12px;padding:24px;text-align:center;margin-bottom:20px}
+.result-hero .rh-label{font-size:14px;opacity:.7;margin-bottom:6px}
+.result-hero .rh-val{font-size:48px;font-weight:800;letter-spacing:-2px}
+.result-hero .rh-sub{font-size:14px;opacity:.6;margin-top:4px}
+.breakdown-table{width:100%;border-collapse:collapse;font-size:14px}
+.breakdown-table tr{border-bottom:1px solid #f1f5f9}
+.breakdown-table td{padding:10px 4px}
+.breakdown-table td:last-child{text-align:right;font-weight:700}
+.breakdown-table tr.total td{font-size:15px;font-weight:700;color:#1e1b4b;border-top:2px solid #e2e8f0;border-bottom:none}
+.breakdown-table tr.net td{font-size:16px;font-weight:800;color:#16a34a}
+.rate-badge{display:inline-block;padding:3px 10px;border-radius:20px;font-size:12px;font-weight:700}
+.rate-badge.lt{background:#eef2ff;color:#4338ca}
+.rate-badge.st{background:#fef3c7;color:#b45309}
+.rate-badge.niit{background:#fce7f3;color:#be185d}
+.comparison{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}
+@media(max-width:500px){.comparison{grid-template-columns:1fr}}
+.cmp-card{border-radius:10px;padding:16px;text-align:center;border:2px solid}
+.cmp-card.lt{border-color:#4338ca;background:#eef2ff}
+.cmp-card.st{border-color:#d97706;background:#fffbeb}
+.cmp-card .c-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px}
+.cmp-card.lt .c-label{color:#4338ca}
+.cmp-card.st .c-label{color:#b45309}
+.cmp-card .c-tax{font-size:26px;font-weight:800}
+.cmp-card.lt .c-tax{color:#4338ca}
+.cmp-card.st .c-tax{color:#b45309}
+.cmp-card .c-rate{font-size:13px;margin-top:2px}
+.cmp-card .c-saving{font-size:12px;color:#16a34a;font-weight:700;margin-top:6px}
+.brackets-table{width:100%;border-collapse:collapse;font-size:13px}
+.brackets-table th{background:#f8fafc;padding:8px 10px;text-align:left;font-size:12px;font-weight:700;color:#4338ca;text-transform:uppercase}
+.brackets-table td{padding:8px 10px;border-bottom:1px solid #f1f5f9;color:#334155}
+.brackets-table tr.active-row td{background:#eef2ff;font-weight:700;color:#1e1b4b}
+.info-box{background:#eef2ff;border:1px solid #c7d2fe;border-radius:10px;padding:14px 16px;margin-top:16px;font-size:14px;color:#3730a3;line-height:1.7}
+.disclaimer{background:#f8fafc;border-radius:8px;padding:12px 16px;font-size:12px;color:#94a3b8;margin-top:16px}
+details{border-bottom:1px solid #f1f5f9;padding:14px 0}
+summary{font-size:15px;font-weight:600;cursor:pointer;color:#1e293b;list-style:none;display:flex;justify-content:space-between}
+summary::-webkit-details-marker{display:none}
+summary::after{content:'+';font-size:20px;color:#4338ca;font-weight:400}
+details[open] summary::after{content:'−'}
+details p{margin-top:10px;color:#475569;font-size:14px;line-height:1.7}
+footer{text-align:center;color:#94a3b8;font-size:12px;padding:20px;border-top:1px solid #e2e8f0;margin-top:40px}
+footer a{color:#64748b}
+</style>
+</head>
+<body>
+<header>
+  <h1>📈 Capital Gains Tax Calculator</h1>
+  <p>2025 Federal Rates · Short-Term vs Long-Term · NIIT · Stocks, Real Estate, Crypto</p>
+</header>
+<div class="container">
+  <div class="ad-slot"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6626869606288906" data-ad-slot="1122334455" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
+
+  <div class="card">
+    <h2>📋 Sale Details</h2>
+
+    <div class="sec-label">Asset Information</div>
+    <div class="grid-2">
+      <div>
+        <label for="purchase-price">Purchase Price (Cost Basis)</label>
+        <div class="input-wrap"><span class="prefix">$</span><input type="number" id="purchase-price" class="has-prefix" value="50000" min="0" step="1000"></div>
+      </div>
+      <div>
+        <label for="sale-price">Sale Price</label>
+        <div class="input-wrap"><span class="prefix">$</span><input type="number" id="sale-price" class="has-prefix" value="120000" min="0" step="1000"></div>
+      </div>
+    </div>
+
+    <div style="margin-top:14px">
+      <label>Holding Period</label>
+      <div class="radio-row" style="margin-top:6px">
+        <button class="radio-btn" id="btn-st" onclick="setHolding('short')">Short-term (≤ 1 year)</button>
+        <button class="radio-btn active" id="btn-lt" onclick="setHolding('long')">Long-term (&gt; 1 year)</button>
+      </div>
+      <input type="hidden" id="holding" value="long">
+    </div>
+
+    <div class="sec-label">Your Tax Situation</div>
+    <div class="grid-2">
+      <div>
+        <label for="filing-status">Filing Status</label>
+        <select id="filing-status">
+          <option value="single">Single</option>
+          <option value="mfj" selected>Married Filing Jointly</option>
+          <option value="hoh">Head of Household</option>
+        </select>
+      </div>
+      <div>
+        <label for="annual-income">Annual Taxable Income (excl. this gain)</label>
+        <div class="input-wrap"><span class="prefix">$</span><input type="number" id="annual-income" class="has-prefix" value="120000" min="0" step="5000"></div>
+        <div class="hint">Your W-2 / business income before this sale</div>
+      </div>
+    </div>
+    <div style="margin-top:14px">
+      <label for="capital-losses">Capital Losses This Year (to offset)</label>
+      <div class="input-wrap" style="max-width:260px"><span class="prefix">$</span><input type="number" id="capital-losses" class="has-prefix" value="0" min="0" step="500"></div>
+      <div class="hint">Losses from other sales reduce your taxable gain</div>
+    </div>
+
+    <button class="calc-btn" onclick="calculate()">Calculate My Capital Gains Tax →</button>
+  </div>
+
+  <div id="results">
+    <div class="card">
+      <div class="result-hero">
+        <div class="rh-label">Estimated Capital Gains Tax (Federal)</div>
+        <div class="rh-val" id="rh-val">$0</div>
+        <div class="rh-sub" id="rh-sub"></div>
+      </div>
+
+      <table class="breakdown-table" id="breakdown-table"></table>
+
+      <div class="comparison" id="comparison"></div>
+
+      <div class="info-box" id="info-box"></div>
+      <div class="disclaimer">⚠️ Federal estimates only. State income taxes on capital gains vary significantly (0% in TX/FL to 13.3% in CA). This calculator does not account for state taxes, AMT, qualified opportunity zones, or installment sales. Consult a tax professional for your specific situation.</div>
+    </div>
+
+    <div class="card">
+      <h2>📊 2025 Long-Term Capital Gains Brackets</h2>
+      <table class="brackets-table" id="brackets-table"></table>
+    </div>
+  </div>
+
+  <div class="ad-slot"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6626869606288906" data-ad-slot="2233445566" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
+
+  <div class="card">
+    <h2>Frequently Asked Questions</h2>
+    <details open><summary>What is the capital gains tax rate for 2025?</summary><p>For 2025, long-term capital gains rates (assets held over 1 year) are 0%, 15%, or 20% depending on your taxable income. Single filers pay 0% up to $47,025, 15% up to $518,900, and 20% above that. Married filing jointly: 0% up to $94,050, 15% up to $583,750, 20% above. Short-term gains are taxed as ordinary income at your regular bracket (10%–37%).</p></details>
+    <details><summary>What is the Net Investment Income Tax (NIIT)?</summary><p>The NIIT is an additional 3.8% tax on investment income for high earners. It applies to the lesser of your net investment income or the amount your MAGI exceeds $200,000 (single) or $250,000 (married filing jointly). This can push your effective long-term rate from 20% to 23.8%.</p></details>
+    <details><summary>Does the IRS primary residence exclusion apply to me?</summary><p>If you sell your primary home, you may exclude up to $250,000 of capital gains ($500,000 if married filing jointly) from federal tax, provided you owned and lived in the home for at least 2 of the last 5 years. This exclusion does not apply to investment properties or vacation homes.</p></details>
+    <details><summary>How do capital losses reduce my tax?</summary><p>Capital losses offset capital gains dollar-for-dollar. If losses exceed gains, you can deduct up to $3,000 per year against ordinary income, and carry forward the remaining loss to future years indefinitely. This strategy — tax-loss harvesting — is commonly used to minimize annual tax bills.</p></details>
+    <details><summary>Are cryptocurrency gains taxed as capital gains?</summary><p>Yes. The IRS treats cryptocurrency as property. Selling, exchanging, or spending crypto triggers a capital gains event. If held over 1 year, you pay long-term rates. Under 1 year = short-term ordinary income rates. Mining and staking rewards are taxed as ordinary income when received.</p></details>
+  </div>
+
+  <div class="ad-slot"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6626869606288906" data-ad-slot="3344556677" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
+</div>
+
+<footer><p>CapitalGainsTaxCalculator · Federal estimates only. Not tax advice. Consult a CPA for your full tax picture.</p><p style="margin-top:6px"><a href="/privacy.html">Privacy Policy</a></p></footer>
+
+<script>
+let holdingVal='long';
+function setHolding(v){holdingVal=v;document.getElementById('btn-st').classList.toggle('active',v==='short');document.getElementById('btn-lt').classList.toggle('active',v==='long');document.getElementById('holding').value=v;}
+
+const fmt=n=>'$'+Math.round(Math.abs(n)).toLocaleString('en-US');
+const fmtPct=n=>n.toFixed(1)+'%';
+
+// 2025 long-term brackets
+const LT_BRACKETS={
+  single:[{max:47025,rate:0},{max:518900,rate:0.15},{max:Infinity,rate:0.20}],
+  mfj:[{max:94050,rate:0},{max:583750,rate:0.15},{max:Infinity,rate:0.20}],
+  hoh:[{max:63000,rate:0},{max:551350,rate:0.15},{max:Infinity,rate:0.20}]
+};
+// 2025 ordinary income brackets (simplified)
+const ST_BRACKETS={
+  single:[{max:11925,rate:0.10},{max:48475,rate:0.12},{max:103350,rate:0.22},{max:197300,rate:0.24},{max:250525,rate:0.32},{max:626350,rate:0.35},{max:Infinity,rate:0.37}],
+  mfj:[{max:23850,rate:0.10},{max:96950,rate:0.12},{max:206700,rate:0.22},{max:394600,rate:0.24},{max:501050,rate:0.32},{max:751600,rate:0.35},{max:Infinity,rate:0.37}],
+  hoh:[{max:17000,rate:0.10},{max:64850,rate:0.12},{max:103350,rate:0.22},{max:197300,rate:0.24},{max:250500,rate:0.32},{max:626350,rate:0.35},{max:Infinity,rate:0.37}]
+};
+// NIIT thresholds
+const NIIT_THRESH={single:200000,mfj:250000,hoh:200000};
+
+function getMarginalRate(income,gain,status,brackets){
+  let tax=0;
+  const totalIncome=income+gain;
+  for(const b of brackets){
+    const prev=brackets[brackets.indexOf(b)-1]?.max||0;
+    if(totalIncome>prev){
+      const taxable=Math.min(totalIncome,b.max)-Math.max(income,prev);
+      if(taxable>0)tax+=taxable*b.rate;
+    }
+  }
+  return tax;
+}
+
+function calculate(){
+  const purchase=parseFloat(document.getElementById('purchase-price').value)||0;
+  const sale=parseFloat(document.getElementById('sale-price').value)||0;
+  const holding=document.getElementById('holding').value;
+  const status=document.getElementById('filing-status').value;
+  const income=parseFloat(document.getElementById('annual-income').value)||0;
+  const losses=parseFloat(document.getElementById('capital-losses').value)||0;
+
+  const rawGain=sale-purchase;
+  const taxableGain=Math.max(0,rawGain-losses);
+  const effectiveLoss=Math.min(losses,rawGain);
+
+  let fedTax=0,rate=0,niit=0;
+
+  if(holding==='long'){
+    fedTax=getMarginalRate(income,taxableGain,status,LT_BRACKETS[status]);
+    rate=taxableGain>0?fedTax/taxableGain:0;
+    // NIIT
+    const niitExcess=Math.max(0,income+taxableGain-NIIT_THRESH[status]);
+    niit=Math.min(taxableGain,niitExcess)*0.038;
+  } else {
+    fedTax=getMarginalRate(income,taxableGain,status,ST_BRACKETS[status]);
+    rate=taxableGain>0?fedTax/taxableGain:0;
+    const niitExcess=Math.max(0,income+taxableGain-NIIT_THRESH[status]);
+    niit=Math.min(taxableGain,niitExcess)*0.038;
+  }
+
+  const totalTax=fedTax+niit;
+  const netProfit=rawGain-totalTax;
+
+  document.getElementById('rh-val').textContent=fmt(totalTax);
+  document.getElementById('rh-sub').textContent=`Effective rate: ${fmtPct(taxableGain>0?totalTax/taxableGain*100:0)} · Net profit after tax: ${fmt(netProfit)}`;
+
+  // Breakdown table
+  const bt=document.getElementById('breakdown-table');
+  bt.innerHTML=`
+    <tr><td style="color:#64748b">Sale price</td><td>${fmt(sale)}</td></tr>
+    <tr><td style="color:#64748b">Cost basis (purchase price)</td><td>− ${fmt(purchase)}</td></tr>
+    <tr><td style="color:#64748b">Gross gain</td><td>${rawGain>=0?fmt(rawGain):'−'+fmt(rawGain)}</td></tr>
+    ${losses>0?`<tr><td style="color:#16a34a">Capital losses applied</td><td style="color:#16a34a">− ${fmt(effectiveLoss)}</td></tr>`:''}
+    <tr><td style="color:#64748b">Taxable gain</td><td>${fmt(taxableGain)}</td></tr>
+    <tr><td style="color:#64748b">Federal tax <span class="rate-badge ${holding==='long'?'lt':'st'}">${holding==='long'?'Long-term':'Short-term'} ${fmtPct(rate*100)}</span></td><td>${fmt(fedTax)}</td></tr>
+    ${niit>0?`<tr><td style="color:#64748b">Net Investment Income Tax <span class="rate-badge niit">NIIT 3.8%</span></td><td>${fmt(niit)}</td></tr>`:''}
+    <tr class="total"><td>Total federal tax</td><td>${fmt(totalTax)}</td></tr>
+    <tr class="net"><td>Net profit after tax</td><td>${fmt(netProfit)}</td></tr>
+  `;
+
+  // LT vs ST comparison
+  const ltTax=getMarginalRate(income,taxableGain,status,LT_BRACKETS[status]);
+  const stTax=getMarginalRate(income,taxableGain,status,ST_BRACKETS[status]);
+  const ltRate=taxableGain>0?ltTax/taxableGain:0;
+  const stRate=taxableGain>0?stTax/taxableGain:0;
+  const saving=stTax-ltTax;
+
+  document.getElementById('comparison').innerHTML=`
+    <div class="cmp-card lt">
+      <div class="c-label">Long-term rate (>1 yr)</div>
+      <div class="c-tax">${fmt(ltTax)}</div>
+      <div class="c-rate">${fmtPct(ltRate*100)} effective rate</div>
+      ${holding==='short'&&saving>0?`<div class="c-saving">Save ${fmt(saving)} by holding longer</div>`:''}
+    </div>
+    <div class="cmp-card st">
+      <div class="c-label">Short-term rate (≤1 yr)</div>
+      <div class="c-tax">${fmt(stTax)}</div>
+      <div class="c-rate">${fmtPct(stRate*100)} effective rate</div>
+    </div>
+  `;
+
+  // Info box
+  const infoEl=document.getElementById('info-box');
+  if(rawGain<=0){infoEl.textContent=`💡 You have a capital loss of ${fmt(Math.abs(rawGain))}. You can use this to offset other gains, or deduct up to $3,000 against ordinary income. Carry forward the rest to future tax years.`;}
+  else if(holding==='short'&&saving>0){infoEl.textContent=`💡 By holding this asset until the long-term threshold (>1 year), you could save ${fmt(saving)} in federal taxes. Long-term rates are 0%, 15%, or 20% vs. your current ${fmtPct(stRate*100)} short-term rate.`;}
+  else if(niit>0){infoEl.textContent=`💡 You owe the 3.8% Net Investment Income Tax (${fmt(niit)}) because your income exceeds the NIIT threshold. Consider strategies like opportunity zone investments or installment sales to spread gains across tax years.`;}
+  else{infoEl.textContent=`💡 Your effective capital gains rate is ${fmtPct(totalTax/Math.max(taxableGain,1)*100)}. Consider tax-loss harvesting in your portfolio to offset this gain and reduce your tax bill.`;}
+
+  // Brackets table
+  const brackets=LT_BRACKETS[status];
+  const statusLabel={single:'Single',mfj:'Married Filing Jointly',hoh:'Head of Household'};
+  const bt2=document.getElementById('brackets-table');
+  bt2.innerHTML=`<thead><tr><th>Rate</th><th>Income Range (${statusLabel[status]}, 2025)</th><th>Your Status</th></tr></thead><tbody>`;
+  const totalInc=income+taxableGain;
+  brackets.forEach((b,i)=>{
+    const prev=i>0?brackets[i-1].max:0;
+    const range=b.max===Infinity?`Over $${prev.toLocaleString()}`:`$${prev.toLocaleString()} – $${b.max.toLocaleString()}`;
+    const active=totalInc>prev&&totalInc<=b.max;
+    bt2.innerHTML+=`<tr class="${active?'active-row':''}"><td>${(b.rate*100).toFixed(0)}%</td><td>${range}</td><td>${active?'← You are here':''}</td></tr>`;
+  });
+  bt2.innerHTML+='</tbody>';
+
+  document.getElementById('results').style.display='block';
+  document.getElementById('results').scrollIntoView({behavior:'smooth',block:'nearest'});
+}
+window.addEventListener('DOMContentLoaded',calculate);
+</script>
+</body>
+</html>
